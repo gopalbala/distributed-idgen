@@ -23,7 +23,7 @@ public class SnowflakeIdGenerator implements IdGenerator {
     private final int generatingNodeId;
     private volatile long currentSequence;
     private final Object lock = new Object();
-    private volatile long lastTimestamp = 0L;
+    private volatile long lastTimestamp;
 
     @PostConstruct
     public void checkNodeIdBounds() throws NodeIdOutOfBoundException {
@@ -33,7 +33,8 @@ public class SnowflakeIdGenerator implements IdGenerator {
     }
 
     @Override
-    public long generateId() throws ClockMovedBackException {
+    public long generateId() throws ClockMovedBackException, NodeIdOutOfBoundException {
+        checkNodeIdBounds();
         synchronized (lock) {
             long currentTimeStamp = getTimeStamp();
             if (currentTimeStamp < lastTimestamp) {
