@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f448a85c-07fb-491c-b7b0-efb8383dd8a6" name="Default Changelist" comment="dummy implementation">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/exception/ClockMovedBackException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/exception/NodeIdOutOfBoundException.java" afterDir="false" />
+    <list default="true" id="f448a85c-07fb-491c-b7b0-efb8383dd8a6" name="Default Changelist" comment="minor changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SequenceIdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/UUIDGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/didgen/BeanDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/BeanDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/didgen/IdGeneratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/IdGeneratorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/IdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SnowflakeIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SnowflakeIdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SnowflakeIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SnowflakeSequenceIdGenerator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,8 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SnowflakeSequenceIdGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gb.didgen.service.SnowflakeSequenceIdGenerator" />
+      <module name="distributed-idgen.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gb.didgen.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SnowflakeSequenceIdGenerator" />
         <item itemvalue="Application.DistributedIdDesignMain" />
         <item itemvalue="Application.BeanDefinition" />
       </list>
@@ -219,54 +228,60 @@
       <screen x="0" y="23" width="1792" height="1031" />
     </state>
     <state x="496" y="204" width="811" height="669" key="#Project_Structure/0.23.1792.1031@0.23.1792.1031" timestamp="1593873976129" />
-    <state x="709" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1593882582442">
-      <screen x="0" y="23" width="1792" height="1031" />
-    </state>
-    <state x="709" y="255" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1031@0.23.1792.1031" timestamp="1593882582442" />
-    <state x="986" y="151" key="#xdebugger.evaluate" timestamp="1593920481964">
+    <state x="709" y="255" key="#com.intellij.ide.util.MemberChooser" timestamp="1593933423908">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
-    <state x="986" y="151" key="#xdebugger.evaluate/0.23.1792.1033@0.23.1792.1033" timestamp="1593920481964" />
-    <state x="520" y="136" key="CommitChangelistDialog2" timestamp="1593918897828">
-      <screen x="0" y="23" width="1792" height="1031" />
+    <state x="709" y="255" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1031@0.23.1792.1031" timestamp="1593882582442" />
+    <state x="709" y="255" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1033@0.23.1792.1033" timestamp="1593933423908" />
+    <state x="378" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1593933356748">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="378" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1033@0.23.1792.1033" timestamp="1593933356748" />
+    <state x="986" y="151" key="#xdebugger.evaluate" timestamp="1593929211135">
+      <screen x="0" y="23" width="1792" height="1033" />
+    </state>
+    <state x="986" y="151" key="#xdebugger.evaluate/0.23.1792.1033@0.23.1792.1033" timestamp="1593929211135" />
+    <state x="520" y="136" key="CommitChangelistDialog2" timestamp="1593933314688">
+      <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state x="520" y="136" key="CommitChangelistDialog2/0.23.1792.1031@0.23.1792.1031" timestamp="1593918897828" />
-    <state width="1750" height="281" key="GridCell.Tab.0.bottom" timestamp="1593923020307">
+    <state x="520" y="136" key="CommitChangelistDialog2/0.23.1792.1033@0.23.1792.1033" timestamp="1593933314688" />
+    <state width="1750" height="281" key="GridCell.Tab.0.bottom" timestamp="1593931661279">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1750" height="281" key="GridCell.Tab.0.bottom/0.23.1792.1031@0.23.1792.1031" timestamp="1593919297041" />
-    <state width="1750" height="281" key="GridCell.Tab.0.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1593923020307" />
-    <state width="1750" height="281" key="GridCell.Tab.0.center" timestamp="1593923020306">
+    <state width="1750" height="281" key="GridCell.Tab.0.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1593931661279" />
+    <state width="1750" height="281" key="GridCell.Tab.0.center" timestamp="1593931661278">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1750" height="281" key="GridCell.Tab.0.center/0.23.1792.1031@0.23.1792.1031" timestamp="1593919297040" />
-    <state width="1750" height="281" key="GridCell.Tab.0.center/0.23.1792.1033@0.23.1792.1033" timestamp="1593923020306" />
-    <state width="1750" height="281" key="GridCell.Tab.0.left" timestamp="1593923020306">
+    <state width="1750" height="281" key="GridCell.Tab.0.center/0.23.1792.1033@0.23.1792.1033" timestamp="1593931661278" />
+    <state width="1750" height="281" key="GridCell.Tab.0.left" timestamp="1593931661278">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1750" height="281" key="GridCell.Tab.0.left/0.23.1792.1031@0.23.1792.1031" timestamp="1593919297040" />
-    <state width="1750" height="281" key="GridCell.Tab.0.left/0.23.1792.1033@0.23.1792.1033" timestamp="1593923020306" />
-    <state width="1750" height="281" key="GridCell.Tab.0.right" timestamp="1593923020306">
+    <state width="1750" height="281" key="GridCell.Tab.0.left/0.23.1792.1033@0.23.1792.1033" timestamp="1593931661278" />
+    <state width="1750" height="281" key="GridCell.Tab.0.right" timestamp="1593931661279">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1750" height="281" key="GridCell.Tab.0.right/0.23.1792.1031@0.23.1792.1031" timestamp="1593919297041" />
-    <state width="1750" height="281" key="GridCell.Tab.0.right/0.23.1792.1033@0.23.1792.1033" timestamp="1593923020306" />
-    <state width="1750" height="347" key="GridCell.Tab.1.bottom" timestamp="1593922747064">
+    <state width="1750" height="281" key="GridCell.Tab.0.right/0.23.1792.1033@0.23.1792.1033" timestamp="1593931661279" />
+    <state width="1750" height="347" key="GridCell.Tab.1.bottom" timestamp="1593931650629">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
-    <state width="1750" height="347" key="GridCell.Tab.1.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1593922747064" />
-    <state width="1750" height="347" key="GridCell.Tab.1.center" timestamp="1593922747063">
+    <state width="1750" height="347" key="GridCell.Tab.1.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1593931650629" />
+    <state width="1750" height="347" key="GridCell.Tab.1.center" timestamp="1593931650629">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
-    <state width="1750" height="347" key="GridCell.Tab.1.center/0.23.1792.1033@0.23.1792.1033" timestamp="1593922747063" />
-    <state width="1750" height="347" key="GridCell.Tab.1.left" timestamp="1593922747063">
+    <state width="1750" height="347" key="GridCell.Tab.1.center/0.23.1792.1033@0.23.1792.1033" timestamp="1593931650629" />
+    <state width="1750" height="347" key="GridCell.Tab.1.left" timestamp="1593931650628">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
-    <state width="1750" height="347" key="GridCell.Tab.1.left/0.23.1792.1033@0.23.1792.1033" timestamp="1593922747063" />
-    <state width="1750" height="347" key="GridCell.Tab.1.right" timestamp="1593922747064">
+    <state width="1750" height="347" key="GridCell.Tab.1.left/0.23.1792.1033@0.23.1792.1033" timestamp="1593931650628" />
+    <state width="1750" height="347" key="GridCell.Tab.1.right" timestamp="1593931650629">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
-    <state width="1750" height="347" key="GridCell.Tab.1.right/0.23.1792.1033@0.23.1792.1033" timestamp="1593922747064" />
+    <state width="1750" height="347" key="GridCell.Tab.1.right/0.23.1792.1033@0.23.1792.1033" timestamp="1593931650629" />
     <state x="496" y="278" key="Vcs.Push.Dialog.v2" timestamp="1593876301449">
       <screen x="0" y="23" width="1792" height="1031" />
     </state>
@@ -284,8 +299,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SnowflakeIdGenerator.java</url>
-          <line>37</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SnowflakeSequenceIdGenerator.java</url>
+          <line>36</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

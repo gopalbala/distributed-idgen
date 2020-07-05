@@ -2,7 +2,6 @@ package com.gb.didgen.service;
 
 import com.gb.didgen.exception.ClockMovedBackException;
 import com.gb.didgen.exception.NodeIdOutOfBoundException;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,7 @@ import static com.gb.didgen.common.Constants.NODE_ID_BIT_LEN;
 import static com.gb.didgen.common.Constants.SEQUENCE_BIT_LEN;
 
 @Service
-public class SnowflakeIdGenerator implements IdGenerator {
+public class SnowflakeSequenceIdGenerator implements SequenceIdGenerator {
     @Autowired
     private Integer generatingNodeId;
 
