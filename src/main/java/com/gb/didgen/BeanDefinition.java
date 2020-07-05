@@ -13,7 +13,7 @@ import static com.gb.didgen.common.Constants.NODE_ID_BIT_LEN;
 @Component
 public class BeanDefinition {
     @Bean
-    public int generatingNodeId() {
+    public Integer generatingNodeId() {
         int maxNodeVal = (int) Math.pow(2, NODE_ID_BIT_LEN);
         int nodeId;
         try {
