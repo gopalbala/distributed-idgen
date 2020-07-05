@@ -54,7 +54,7 @@ We can have a service that can generate identifiers and distribute them to servi
 https://blog.twitter.com/engineering/en_us/a/2010/announcing-snowflake.html 
 
 Other references  
-https://github.com/sony/sonyflake 
+https://github.com/sony/sonyflake  
 https://instagram-engineering.com/sharding-ids-at-instagram-1cf5a71e5a5c  
 https://docs.mongodb.com/manual/reference/method/ObjectId/  
 
