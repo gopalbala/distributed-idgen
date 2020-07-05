@@ -11,17 +11,19 @@ In this tutorial we are going to look in to ways to create these identifiers in 
 1. Create id in database.  
 2. Create id from backend and send to database.  
 
-UUIDs
+## UUIDs
 
 UUID - universally unique id or GUID by microsoft is a 128 bit id used to generate ids which can be generated in distributed manner and still remain unique. This uniqueness does not depend on central co-ordination between the systems creating them. So the defacto choice for many people creating unique identifiers are UUIDs. The possibility of duplication even when created in distributed manner is close to zero. Since the possible values are 2 to the power of 128 the max values is 340,​282,​366,​920,​938,​463,​463,​374,​607,​431,​768,​211,​456.  
 
-Sample UUID - xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
-              907f39b0-6778-4c47-b173-e6348efa1641
-              M is the UUID version here we are using type 4 UUIDs
-              N is the UUID variant
+Sample UUID - xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx  
+              907f39b0-6778-**4**c47-b173-e6348efa1641  
+              M is the UUID version here we are using type 4 UUIDs  
+              N is the UUID variant  
               
 The default UUIDs that we create out of syntax.   
+    ```
     UUID.randomUUID() is version 4 UUID
+    ```
     
 What are the pros and cons of UUIDs to uniquely identify records?
 
