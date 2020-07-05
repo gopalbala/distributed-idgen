@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f448a85c-07fb-491c-b7b0-efb8383dd8a6" name="Default Changelist" comment="minor changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SequenceIdGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/UUIDGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/didgen/IdGeneratorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/IdGeneratorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/IdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/IdGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SnowflakeIdGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/gb/didgen/service/SnowflakeSequenceIdGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,26 +237,26 @@
     </state>
     <state x="520" y="136" key="CommitChangelistDialog2/0.23.1792.1031@0.23.1792.1031" timestamp="1593918897828" />
     <state x="520" y="136" key="CommitChangelistDialog2/0.23.1792.1033@0.23.1792.1033" timestamp="1593933314688" />
-    <state width="1750" height="281" key="GridCell.Tab.0.bottom" timestamp="1593931661279">
+    <state width="1750" height="281" key="GridCell.Tab.0.bottom" timestamp="1593933496520">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1750" height="281" key="GridCell.Tab.0.bottom/0.23.1792.1031@0.23.1792.1031" timestamp="1593919297041" />
-    <state width="1750" height="281" key="GridCell.Tab.0.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1593931661279" />
-    <state width="1750" height="281" key="GridCell.Tab.0.center" timestamp="1593931661278">
+    <state width="1750" height="281" key="GridCell.Tab.0.bottom/0.23.1792.1033@0.23.1792.1033" timestamp="1593933496520" />
+    <state width="1750" height="281" key="GridCell.Tab.0.center" timestamp="1593933496519">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1750" height="281" key="GridCell.Tab.0.center/0.23.1792.1031@0.23.1792.1031" timestamp="1593919297040" />
-    <state width="1750" height="281" key="GridCell.Tab.0.center/0.23.1792.1033@0.23.1792.1033" timestamp="1593931661278" />
-    <state width="1750" height="281" key="GridCell.Tab.0.left" timestamp="1593931661278">
+    <state width="1750" height="281" key="GridCell.Tab.0.center/0.23.1792.1033@0.23.1792.1033" timestamp="1593933496519" />
+    <state width="1750" height="281" key="GridCell.Tab.0.left" timestamp="1593933496519">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1750" height="281" key="GridCell.Tab.0.left/0.23.1792.1031@0.23.1792.1031" timestamp="1593919297040" />
-    <state width="1750" height="281" key="GridCell.Tab.0.left/0.23.1792.1033@0.23.1792.1033" timestamp="1593931661278" />
-    <state width="1750" height="281" key="GridCell.Tab.0.right" timestamp="1593931661279">
+    <state width="1750" height="281" key="GridCell.Tab.0.left/0.23.1792.1033@0.23.1792.1033" timestamp="1593933496519" />
+    <state width="1750" height="281" key="GridCell.Tab.0.right" timestamp="1593933496519">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
     <state width="1750" height="281" key="GridCell.Tab.0.right/0.23.1792.1031@0.23.1792.1031" timestamp="1593919297041" />
-    <state width="1750" height="281" key="GridCell.Tab.0.right/0.23.1792.1033@0.23.1792.1033" timestamp="1593931661279" />
+    <state width="1750" height="281" key="GridCell.Tab.0.right/0.23.1792.1033@0.23.1792.1033" timestamp="1593933496519" />
     <state width="1750" height="347" key="GridCell.Tab.1.bottom" timestamp="1593931650629">
       <screen x="0" y="23" width="1792" height="1033" />
     </state>
