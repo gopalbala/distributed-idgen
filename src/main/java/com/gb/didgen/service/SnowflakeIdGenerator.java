@@ -1,5 +1,6 @@
 package com.gb.didgen.service;
 
+import com.gb.didgen.exception.ClockMovedBackException;
 import com.gb.didgen.exception.NodeIdOutOfBoundException;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,11 +18,12 @@ public class SnowflakeIdGenerator implements IdGenerator {
     private final int maxSequence = (int) Math.pow(2, SEQUENCE_BIT_LEN);
     private final int maxNodeVal = (int) Math.pow(2, NODE_ID_BIT_LEN);
 
-    private final long EPOCH = Instant.EPOCH.toEpochMilli();
+    private final long EPOCH_START = Instant.EPOCH.toEpochMilli();
 
     private final int generatingNodeId;
     private volatile long currentSequence;
-    private volatile long lastTimestamp;
+    private final Object lock = new Object();
+    private volatile long lastTimestamp = 0L;
 
     @PostConstruct
     public void checkNodeIdBounds() throws NodeIdOutOfBoundException {
@@ -31,7 +33,36 @@ public class SnowflakeIdGenerator implements IdGenerator {
     }
 
     @Override
-    public long generateId() {
-        return 0;
+    public long generateId() throws ClockMovedBackException {
+        synchronized (lock) {
+            long currentTimeStamp = getTimeStamp();
+            if (currentTimeStamp < lastTimestamp) {
+                throw new ClockMovedBackException("Clock moved back");
+            }
+            if (currentTimeStamp == lastTimestamp) {
+                currentSequence = currentSequence + 1 & maxSequence;
+                if (currentSequence == 0) {
+                    currentTimeStamp = waitNextMillis(currentTimeStamp);
+                }
+            } else {
+                currentSequence = 0;
+            }
+            lastTimestamp = currentTimeStamp;
+            long id = currentTimeStamp << (NODE_ID_BIT_LEN + SEQUENCE_BIT_LEN);
+            id |= (generatingNodeId << SEQUENCE_BIT_LEN);
+            id |= currentSequence;
+            return id;
+        }
+    }
+
+    private long getTimeStamp() {
+        return Instant.now().toEpochMilli() - EPOCH_START;
+    }
+
+    private long waitNextMillis(long currentTimeStamp) {
+        while (currentTimeStamp == lastTimestamp) {
+            currentTimeStamp = getTimeStamp();
+        }
+        return currentTimeStamp;
     }
 }
