@@ -15,6 +15,24 @@ UUIDs
 
 UUID - universally unique id or GUID by microsoft is a 128 bit id used to generate ids which can be generated in distributed manner and still remain unique. This uniqueness does not depend on central co-ordination between the systems creating them. So the defacto choice for many people creating unique identifiers are UUIDs. The possibility of duplication even when created in distributed manner is close to zero. Since the possible values are 2 to the power of 128 the max values is 340,​282,​366,​920,​938,​463,​463,​374,​607,​431,​768,​211,​456.  
 
+Sample UUID - xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
+              907f39b0-6778-4c47-b173-e6348efa1641
+              M is the UUID version here we are using type 4 UUIDs
+              N is the UUID variant
+              
+The default UUIDs that we create out of syntax.   
+    UUID.randomUUID() is version 4 UUID
+    
+What are the pros and cons of UUIDs to uniquely identify records?
+
+Easy to generate.  
+Fast.   
+Uniquness.  
+Random i.e. we cannot predict next id with the current id.  
+
+UUIDs are 128 bits long which is 32 chars in length.  
+Sorting UUIDs would not result in ordering of actual records since they are random and not generated in any sequence.  
+
 Consider capturing of occurrences in distributed systems may be take an example of online shopping systems. Item added to cart where the cart with an id. Check out will have an id, payment will have an id and shipment will have an id and delivery notification with an id. It would be easy for someone who monitors the system to track these since the events will have identifiers which having identifiers in increasing order and gives a clear indication that payment event occurred after order event.  
 
 One more example that we can think of is - Social networking site where user creates a post with a unique id. These posts attract likes, comments from users or people who subscribed to certain types of events. In this it would be useful to understand and trace a like or comment to a post will always have an identifier which is greater than the post itself.  
