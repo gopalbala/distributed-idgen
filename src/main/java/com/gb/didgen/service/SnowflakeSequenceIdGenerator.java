@@ -42,7 +42,7 @@ public class SnowflakeSequenceIdGenerator implements SequenceIdGenerator {
             }
             if (currentTimeStamp == lastTimestamp) {
                 currentSequence = currentSequence + 1 & maxSequence;
-                if (currentSequence == 0) {
+                if (currentSequence != 0) {
                     currentTimeStamp = waitNextMillis(currentTimeStamp);
                 }
             } else {
